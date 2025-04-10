@@ -12,7 +12,7 @@ const DEFAULT_MODEL = "runwayml/stable-diffusion-v1-5";
 export default async function handler(req, res) {
     // --- CORS Headers ---
     // IMPORTANT: Replace this placeholder with YOUR GitHub Pages URL!
-    const allowedOrigin = 'https://github.com/Deprived999x/hbs-proxy-function'; // <--- CHANGE THIS LINE!
+    const allowedOrigin = 'https://deprived999x.github.io'; // <--- CHANGE THIS LINE!
 
     res.setHeader('Access-Control-Allow-Origin', allowedOrigin);
     res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
