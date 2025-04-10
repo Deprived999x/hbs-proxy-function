@@ -55,11 +55,8 @@ export default async function handler(req, res) {
         const imageBlob = await inference.textToImage({
             model: effectiveModel,
             inputs: prompt,
-            parameters: { // Optional: Add negative prompts or other parameters if needed
-                negative_prompt: 'blurry, ugly, deformed, low quality, text, words, letters, watermark, signature',
-                // width: 512, // Some models might need explicit sizes
-                // height: 512,
-            }
+            parameters: {} // Parameters object is now empty
+}
         });
 
         console.log("[Proxy] Image Blob received from Hugging Face.");
